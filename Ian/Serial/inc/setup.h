@@ -1,5 +1,8 @@
 //#define DEBUG
 
+//#define BAUD 230400
+#define BAUD 1843200
+
 #include <cstdlib>
 #include <iostream>
 #include <windows.h>

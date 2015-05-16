@@ -65,11 +65,11 @@ int serialOpen(char *argv[])
     }
    
     /* Port configuration parameters: */
-    dcbSerialParams.BaudRate = 921600*2;
+    dcbSerialParams.BaudRate = 1843200;
     dcbSerialParams.ByteSize = 8;
-    dcbSerialParams.StopBits = ONESTOPBIT;
     dcbSerialParams.Parity   = NOPARITY;
-   
+    dcbSerialParams.StopBits = ONESTOPBIT;
+    
     /* Connection timeout parameters: */
     COMMTIMEOUTS timeouts = {0};
    

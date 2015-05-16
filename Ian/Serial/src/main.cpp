@@ -51,7 +51,7 @@ int main(int argc, char *argv[])
     // Closing house-keeping tasks:                     //
     //==================================================//
     CloseHandle(hSerial);
-    fclose(output);
+    fclose(fOutput);
     
     system("PAUSE");
     return EXIT_SUCCESS;

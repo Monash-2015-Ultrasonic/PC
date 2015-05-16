@@ -1,6 +1,7 @@
 //#define DEBUG
 
-#define BUFFERSIZE 8192
+#define BUFFERSIZE  4
+#define EXTRA       4
 
 #include <cstdlib>
 #include <iostream>
@@ -9,8 +10,8 @@
 #ifndef _TASK_H_
 #define _TASK_H_
 
-extern FILE *output;
-extern char serialBuffer[BUFFERSIZE + 4];
+extern FILE *fOutput;
+extern char serialBuffer[BUFFERSIZE + EXTRA];
 extern DWORD dwBytesRead;
 
 int logSetup(char *argv[]);

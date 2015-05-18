@@ -1,9 +1,12 @@
 #define NONBLOCK
 
-#define VENDOR	0x9950
-#define	PRODUCT	0x2015
+#define VENDOR		0x9950
+#define	PRODUCT		0x2015
 
-#define MAX_STR 255
+#define BYTES		8
+#define BUFFERSIZE	256			// 2^BYTES
+
+#define MAX_STR		255
 
 #include <stdio.h>
 #include <wchar.h>
@@ -21,7 +24,7 @@
 extern FILE				*fOutput;
 extern hid_device		*hHID;
 extern int				dataIn;
-extern unsigned char	buffer[256];
+extern unsigned char	buffer[BUFFERSIZE];
 
 int argumentCheck(int argc, char *argv[]);
 int hidOpen(void);

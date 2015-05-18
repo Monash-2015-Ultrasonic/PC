@@ -14,10 +14,9 @@ void readTask(void)
 #else
 	dataIn = hid_read(hHID, buffer, sizeof(buffer));
 #endif
-		
-	for (int i = 0; i < dataIn; i++) {
-		printf("%02hhx ", buffer[i]);
-		fprintf(fOutput, "%02hhx ", buffer[i]);
+	for (int i = 0; i < dataIn/2; i++) {
+		printf("%04x\n", buffer[2*i]<<8|buffer[2*i+1]);
+		fprintf(fOutput, "%04x\n", buffer[2*i]<<8|buffer[2*i+1]);
 	}
 	printf("\n");
 	fprintf(fOutput, "\n");

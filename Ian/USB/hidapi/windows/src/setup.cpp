@@ -2,7 +2,7 @@
 
 
 int				dataIn;
-unsigned char	buffer[256];
+unsigned char	buffer[BUFFERSIZE];
 wchar_t			wstr[MAX_STR];
 
 hid_device		*hHID;

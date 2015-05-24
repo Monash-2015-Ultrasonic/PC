@@ -16,10 +16,10 @@ int logSetup(char *argv[])
     /* If file cannot be created: */
     if (fOutput == NULL) {
         printf("ERROR! Cannot create log file.\n\n");
-        
-        printf("\n\nEXITING\n\n");
+        printf("EXITING\n\n");
         return -1;
     }
+    return 0;
 }
 
 //==================================================//
@@ -39,13 +39,13 @@ int readTask()
         printf("\n\nEXITING\n\n");
         return -1;
     } else { 
-        if (dwBytesRead != 0) {
+       // if (dwBytesRead != 0) {
             /* Read succeeded; output results to console and file: */
             for (int i = 0; i < dwBytesRead; i++) {
-                //printf("%c", serialBuffer[i+3, i+2, i+1, i]);
+                printf("%c", serialBuffer[i+3, i+2, i+1, i]);
                 fprintf(fOutput, "%c", serialBuffer[i+3, i+2, i+1, i]);
             }
-        }
+        //}
         return 0;
     }
 }

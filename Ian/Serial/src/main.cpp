@@ -1,5 +1,6 @@
 #include <cstdlib>
 #include <iostream>
+#include <conio.h>
 #include <windows.h>
 
 #include "..\inc\setup.h"
@@ -45,6 +46,8 @@ int main(int argc, char *argv[])
     
     while (run) {
         run = (readTask() == 0) ? 1 : 0;
+        if (_kbhit())
+			run = 0;
     }
     
     //==================================================//

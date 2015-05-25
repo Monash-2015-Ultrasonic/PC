@@ -1,5 +1,5 @@
-#include "..\windows\inc\task.h"
-#include "..\windows\inc\setup.h"
+#include "..\code\inc\task.h"
+#include "..\code\inc\setup.h"
 
 
 void readTask(void) 

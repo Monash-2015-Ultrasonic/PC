@@ -59,7 +59,7 @@
 			<Tool
 				Name="VCLinkerTool"
 				AdditionalDependencies="hidapi.lib"
-				AdditionalLibraryDirectories="..\windows\Debug"
+				AdditionalLibraryDirectories=".\Debug"
 				GenerateDebugInformation="true"
 				SubSystem="1"
 				TargetMachine="1"
@@ -174,15 +174,15 @@
 			UniqueIdentifier="{4FC737F1-C7A5-4376-A066-2A32D752A2FF}"
 			>
 			<File
-				RelativePath="..\hidtest\main.cpp"
+				RelativePath="..\code\main.cpp"
 				>
 			</File>
 			<File
-				RelativePath=".\src\setup.cpp"
+				RelativePath="..\code\src\setup.cpp"
 				>
 			</File>
 			<File
-				RelativePath=".\src\task.cpp"
+				RelativePath="..\code\src\task.cpp"
 				>
 			</File>
 		</Filter>
@@ -192,11 +192,11 @@
 			UniqueIdentifier="{93995380-89BD-4b04-88EB-625FBE52EBFB}"
 			>
 			<File
-				RelativePath=".\inc\setup.h"
+				RelativePath="..\code\inc\setup.h"
 				>
 			</File>
 			<File
-				RelativePath=".\inc\task.h"
+				RelativePath="..\code\inc\task.h"
 				>
 			</File>
 		</Filter>

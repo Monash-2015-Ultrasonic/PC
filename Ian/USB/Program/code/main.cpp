@@ -1,5 +1,5 @@
-#include "..\windows\inc\setup.h"
-#include "..\windows\inc\task.h"
+#include "..\code\inc\setup.h"
+#include "..\code\inc\task.h"
 
 
 int main(int argc, char* argv[])

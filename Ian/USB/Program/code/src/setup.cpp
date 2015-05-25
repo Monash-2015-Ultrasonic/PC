@@ -1,4 +1,4 @@
-#include "..\windows\inc\setup.h"
+#include "..\code\inc\setup.h"
 
 
 int				dataIn;
